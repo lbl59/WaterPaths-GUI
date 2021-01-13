@@ -1,5 +1,6 @@
 *.optrpt
 *.o
+*.csv
 TestFiles/demands
 TestFiles/evaporation
 TestFiles/inflows
