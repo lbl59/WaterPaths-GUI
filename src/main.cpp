@@ -5,7 +5,8 @@
 #include "InputFileParser/MasterSystemInputFileParser.h"
 #include "Problem/InputFileProblem.h"
 
-#ifdef  PARALLEL
+#ifdef PARALLEL
+#include "../borg/borgms.h"
 #include <mpi.h>
 #endif
 
@@ -38,8 +39,8 @@ void eval(double *vars, double *objs, double *consts) {
 }
 
 int main(int argc, char *argv[]) {
-    int c_num_dec = NON_INITIALIZED;
-    int c_num_obj = NON_INITIALIZED;
+    int c_num_dec = NUM_DEC_VAR;
+    int c_num_obj = NUM_OBJECTIVES;
     int c_num_constr = 0;
     double c_obj[c_num_obj];
     double c_constr[0];
