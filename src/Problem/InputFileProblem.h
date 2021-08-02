@@ -9,8 +9,8 @@
 #include "Base/Problem.h"
 #include "../InputFileParser/MasterSystemInputFileParser.h"
 
-#ifdef  PARALLEL
-#include "../../Borg/borgms.h"
+#ifdef PARALLEL
+#include "../../borg/borgms.h"
 #endif
 
 class InputFileProblem : public Problem {

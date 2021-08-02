@@ -5,8 +5,8 @@
 #ifndef TRIANGLEMODEL_PAPERTESTPROBLEM_H
 #define TRIANGLEMODEL_PAPERTESTPROBLEM_H
 
-#ifdef  PARALLEL
-#include "../../Borg/borgms.h"
+#ifdef PARALLEL
+#include "../../borg/borgms.h"
 #endif
 
 #include "Base/Problem.h"
