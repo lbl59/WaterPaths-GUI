@@ -17,4 +17,4 @@ mpirun ./waterpaths -T ${OMP_NUM_THREADS}\
   -U TestFiles/rdm_utilities_test_problem_opt.csv\
   -W TestFiles/rdm_water_sources_test_problem_opt.csv\
   -P TestFiles/rdm_dmp_test_problem_opt.csv\
-  -b true -o 200 -n 1000
+  -b true -o 100 -n 500
