@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -n 3 -N 3 -p normal
+#SBATCH -n 16 -N 3 -p normal
 #SBATCH --job-name=sedento_valley_optimization
 #SBATCH --output=output/sedento_valley_optimization.out
 #SBATCH --error=error/sedento_valley_optimization.err
@@ -17,4 +17,4 @@ mpirun ./waterpaths -T ${OMP_NUM_THREADS}\
   -U TestFiles/rdm_utilities_test_problem_opt.csv\
   -W TestFiles/rdm_water_sources_test_problem_opt.csv\
   -P TestFiles/rdm_dmp_test_problem_opt.csv\
-  -b true -o 100 -n 500
+  -b true -o 200 -n 1000
