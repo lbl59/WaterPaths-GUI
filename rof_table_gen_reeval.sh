@@ -1,6 +1,5 @@
 #!/bin/bash
-#SBATCH -n 16 -N 5 -p normal
-#SBATCH --ntasks=80
+#SBATCH -n 50 -N 5 -p normal
 #SBATCH --job-name=rof_tables_reeval
 #SBATCH --output=out_reeval/rof_tables_reeval.out
 #SBATCH --error=out_reeval/rof_tables_reeval.err
@@ -9,6 +8,10 @@
 #SBATCH --mail-type=all
 
 export OMP_NUM_THREADS=32
+
+module load openmpi3/3.1.4
+module spider py3-mpi4py
+module spider py3-numpy/1.15.3
 
 START="$(date +%s)"
 
